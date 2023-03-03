@@ -9,7 +9,7 @@ function Countrydata(data) {
     row.setAttribute("class", "row");
     for (let i = 0; i < data.length; i++) {
         var col = document.createElement("div");
-        col.setAttribute("class", "col-lg-4 col-sm-12"); // Updated class name
+        col.setAttribute("class", "col-lg-4 col-sm-12");
         var card = document.createElement("div");
         card.setAttribute("class", "card");
         var cardHeader = document.createElement("div");
@@ -25,7 +25,7 @@ function Countrydata(data) {
         var flag = document.createElement("img");
         flag.setAttribute("src", data[i].flag);
         flag.setAttribute("class", "img-thumbnail");
-        flag.style.width = "250px";
+        flag.style.width = "300px";
         flag.style.height = "200px";
         var capital = document.createElement("div");
         capital.setAttribute("class", "cydetails");
