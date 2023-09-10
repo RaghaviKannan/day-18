@@ -9,7 +9,7 @@ function Countrydata(data) {
     row.setAttribute("class", "row");
     for (let i = 0; i < data.length; i++) {
         var col = document.createElement("div");
-        col.setAttribute("class", "col-lg-4 col-sm-12");
+        col.setAttribute("class", "col-lg-4 col-sm-12"); // Updated class name
         var card = document.createElement("div");
         card.setAttribute("class", "card");
         var cardHeader = document.createElement("div");
@@ -42,7 +42,7 @@ function Countrydata(data) {
         weatherBtn.setAttribute("class", "card cydetails btn btn-primary");
         weatherBtn.textContent = "Click for weather";
         weatherBtn.style.display = "block";
-        weatherBtn.style.margin = "0 auto";
+        weatherBtn.style.margin = "5px auto";
         weatherBtn.addEventListener("click", function () {
             showWeather(data[i].latlng[0], data[i].latlng[1]);
         });
